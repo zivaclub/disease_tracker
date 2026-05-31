@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@450;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-brand-orange: #FF5F1F;
+  --color-ink-black: #1A1A1A;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FAF4EE; /* Beautiful warm parchment background */
+  color: #1A1A1A; /* Ink black text */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Artistic Flair Utility Styles */
+.art-bg-dotted {
+  background-image: radial-gradient(#1A1A1A 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+.art-card {
+  background-color: #ffffff;
+  border: 2px solid #1A1A1A;
+  box-shadow: 4px 4px 0px #1A1A1A;
+  border-radius: 12px;
+  transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.15s ease;
+}
+
+.art-card:hover {
+  transform: translate(-1.5px, -1.5px);
+  box-shadow: 6px 6px 0px #1A1A1A;
+}
+
+.art-card-tilted-right {
+  transform: rotate(0.4deg);
+}
+
+.art-card-tilted-left {
+  transform: rotate(-0.4deg);
+}
+
+.art-btn-orange {
+  background-color: #FF5F1F;
+  color: #ffffff;
+  border: 2px solid #1A1A1A;
+  box-shadow: 3px 3px 0px #1A1A1A;
+  font-weight: 700;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+.art-btn-orange:hover:not(:disabled) {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px #1A1A1A;
+  background-color: #ff7137;
+}
+
+.art-btn-orange:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #1A1A1A;
+}
+
+.art-btn-orange:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.art-btn-secondary {
+  background-color: #ffffff;
+  color: #1A1A1A;
+  border: 2px solid #1A1A1A;
+  box-shadow: 3px 3px 0px #1A1A1A;
+  font-weight: 700;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+.art-btn-secondary:hover:not(:disabled) {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px #1A1A1A;
+  background-color: #FAF4EE;
+}
+
+.art-btn-secondary:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #1A1A1A;
+}
+
+.art-badge {
+  border: 1.5px solid #1A1A1A;
+  box-shadow: 1.5px 1.5px 0px #1A1A1A;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+.art-input {
+  border: 2.5px solid #1A1A1A;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #1A1A1A;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+
+.art-input:focus {
+  outline: none;
+  border-color: #FF5F1F;
+  box-shadow: 2px 2px 0px #1A1A1A;
+}
+
+/* Custom Webkit scrollbar matching the print/ink look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF4EE;
+  border-left: 2px solid #1A1A1A;
+}
+::-webkit-scrollbar-thumb {
+  background: #1A1A1A;
+  border: 1px solid #FAF4EE;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF5F1F;
+}

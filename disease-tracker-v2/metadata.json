@@ -1,0 +1,6 @@
+{
+  "name": "Disease Outbreak Tracker",
+  "description": "A platform for tracking communicable diseases, epidemics, and emerging health threats worldwide, explained in a simple format for anyone to understand.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
